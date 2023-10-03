@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,10 +16,88 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #fce5cd;
 }
+
+.nav-link{
+  margin-right: 4rem;
+  color: black;
+}
+
+.nav-link:hover{
+  background-color: black;
+  color: white;
+}
+
+.main{
+  text-align: center;
+  color: black;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: gray;
+  color: black;
+}
+
+input{
+  margin: 1rem 0;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+textarea{
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+.submit-btn{
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.main-img{
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+/* Single ID */
+
+.singe-note-container{
+  position: absolute;
+  top: 21%;
+  left: 37%;
+  margin-top: -50px;
+  margin-left: -50px;
+  max-width: 600px;
+  max-height: 300px;
+}
+
+.single-note-box{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.single-note-title{
+  margin-bottom: 1rem;
+}
+
